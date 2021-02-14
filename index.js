@@ -5,7 +5,7 @@ const ul = document.querySelector('ul'),
 
 check_hanguel = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 
-const list_of_han = [ '꺼져', '닥쳐', '조용히 해', '치킨이나 먹어', '군대나 가', '어쩌라고', '배고파', '살이나 빼', '시끄러워', '닥치고 강남대성이나 가' ];
+const list_of_han = ['조용히 해', '치킨이나 먹어', '군대나 가',  '배고파', '살이나 빼', '시끄러워' ];
 
 function receiving(text) {
 	console.log(text);
@@ -58,7 +58,7 @@ function sendmessage(event) {
 		} else if (input.value.indexOf('?') !== -1) {
 			setTimeout(receiving, 1500, '잘몰라. 대답하기 귀찮아.');
 		} else {
-			setTimeout(receiving, 1500, 'ㅗ');
+			setTimeout(receiving, 1500, 'ㅎㅎ');
 		}
 	} else {
 		setTimeout(receiving, 1500, '영어 못하면서 잘하는척 하지마');
